@@ -1,0 +1,307 @@
+.Content {
+	p {
+		color: #441111;
+	}
+}
+
+.contentBackground {
+	background-image: url("../img/headerfoto.jpg");
+}
+
+.whiteBackground {
+	background: white;
+	width: 100%;
+	height: 570px;
+	margin-top: -250px;
+}
+
+.welcomeTekst {
+	h2 {
+		color: white;
+		text-align: center;
+		font-size: 28px;
+		font-family: Myriad Pro Regular;
+		font-weight: normal;
+		margin-top: 33px;
+		margin-bottom: 33px;
+	}
+}
+
+.bx-viewport {
+	border-radius: 20px;
+}
+
+.bx-wrapper {
+	border: solid 3px white;
+	border-radius: 20px;
+}
+
+.columnBeads{
+	margin-top: 250px;
+}
+
+.columnBeadsAdministratie {
+	padding-left: 100px;
+	height: 266px;
+
+}
+.columnBeadsBelasting {
+	padding-left: 100px;
+	height: 266px;
+}
+.columnBeadsAdvies {
+	padding-left: 100px;
+	height: 266px;
+}
+
+//////// Wie zijn wij ///////
+
+.buitenfotos {
+	img {
+		margin: 15px;
+		border: 3px solid #441111;
+	}
+}
+
+//////// Links ////////
+.links-list {
+	ul {
+		text-align: right;
+	}
+	li{
+		color: #441111;
+		border: 3px;
+
+	}
+}
+
+.links-foto {
+	margin-bottom: 20px;
+	img {
+		border: 3px solid white;
+	}
+}
+
+//////// Medewerkers ////////
+@mixin bp($point) {
+  @if () {
+    $bp-chicago: "(min-width: 600px)";
+    $bp-la: "(min-width: 960px)";
+    
+    @if $point == la {
+      @media #{$bp-la} { @content; }
+    }
+    @else if $point == chicago {
+      @media #{$bp-chicago} { @content; }
+    }
+  }
+  @else {
+    @content;
+  }
+}
+
+@mixin transition($speed: 0.55s, $delay: 0s) {
+  -webkit-transition: $speed $delay;
+  -moz-transition: $speed $delay;
+  -ms-transition: $speed $delay;
+  transition: $speed $delay;
+}
+
+// clearfix 
+
+@mixin clearfix {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+// variables
+
+$red: #441111;
+
+* {
+  box-sizing: border-box;
+}
+
+ img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+ }
+
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5462/cream_pixels.png) repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #441111;
+}
+
+.container {
+	height: auto;
+  margin: 0 auto;
+	width: 100%;
+  @include bp(chicago) {
+    max-width: 680px;
+  }
+	@include bp(la) {
+		width: 100%;
+	}
+
+	&::after {
+		@include clearfix;
+	}
+	h1{
+		font-size: 25px;
+		margin-left: 45px; 
+	}
+}
+
+.keynote {
+	border: 10px solid #333;
+	width: 408px;
+	overflow: hidden;
+    position: relative;
+    @include bp(chicago) {
+      border-color: white;
+    }
+
+    &:hover {
+    	@include bp(chicago) {
+            @include transition;
+
+	    	img {
+
+	    		-webkit-filter: blur(3px);
+	    		-moz-filter: blur(3px);
+	    		-ms-filter: blur(3px);
+	    		filter: blur(3px);
+	    		@include transition;
+	    	}
+	    }
+    }
+}
+
+.keynote-desc {
+  background: #333;
+	height: 100%;
+	opacity: 1;
+	padding: 5px 20px 30px;
+	position: static;
+	top: auto; right: auto; bottom: 0; left: 0;
+	width: 100%;
+	@include transition;
+	@include bp(chicago) {
+		background: rgba(0,0,0,0.6);
+		height: 30%;
+		opacity: 1;
+		padding: 0 40px;
+		position: absolute;
+	}
+}
+
+.keynote:hover .keynote-desc {
+	background: #333;
+	height: 100%;
+	opacity: 1;
+	padding: 5px 20px 30px;
+	position: static;
+	top: auto; right: auto; bottom: 0; left: 0;
+	width: 100%;
+	@include transition;
+	@include bp(chicago) {
+		background: rgba(0,0,0,0.6);
+		padding: 20px 40px;
+		position: absolute;
+	}
+}
+
+.keynote:hover .keynote-bio {
+	@include bp(chicago) {
+		opacity: 1;
+		margin-top: 0;
+		@include transition(0.55s, 0.35s);
+	}
+}
+
+.keynote:hover .more {
+  @include bp(chicago) {
+    margin: 25px auto;
+    @include transition(0.55s, 0.35s);
+  }
+}
+
+.keynote:hover .keynote-name {
+  &::after {
+    border-bottom: 1px solid #ccc;
+    content: "";
+    bottom: -13px; left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    width: 200px;
+    @include transition(0.35s, 0.75s);
+  }
+}
+
+.keynote-name {
+	color: white;
+	font-size: 1.5em;
+  font-weight: 300;
+	padding: 0 15px;
+  position: relative;
+	text-align: center;
+	@include bp(chicago) {
+		font-size: 2em;
+	}
+  
+  &::after {
+      border-bottom: 1px solid #666;
+      content: "";
+      bottom: -13px; left: 50%;
+      margin-left: -100px;
+      position: absolute;
+      width: 200px;
+      @include bp(chicago) {
+         border-bottom: 1px solid #ccc;
+         margin: 0;
+         width: 0;
+         @include transition(0.35s, 0s);
+      }
+   }
+}
+
+.keynote-bio {
+	color: white;
+	display: block;
+	font-size: 1em;
+  font-weight: 300;
+	position: relative;
+	text-align: center;
+	@include transition(0.55s);
+	@include bp(chicago) {
+		margin-top: 70px;
+		opacity: 0;
+	}
+}
+
+.more {
+  background: $red;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  margin: 25px auto;
+  padding: 10px;
+  text-decoration: none;
+  max-width: 190px;
+  @include bp(chicago) {
+    margin: 80px auto;
+    @include transition(0.55s, 0s);
+  }
+}
+
+.jaarstukken{
+	h1{
+		font-size: 25px;
+	}
+}
