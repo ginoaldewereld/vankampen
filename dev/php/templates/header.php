@@ -18,10 +18,11 @@
 
     <!-- Automate reverse linking (pingbacks) -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon.png">
 
     <!-- build:remove:expanded -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
@@ -40,59 +41,58 @@
 
   </head>
   <body <?php body_class(); ?> >
-<div class="header-top">
-    <div class="u-gridContainer">
-        <div class="headerLinks">
-           <div class="gridCol6">
-                <a href="#">Nieuwsbrieven</a>
-                <a href="#">Aanmelden Nieuwsbrief</a>
-                <a href="#">Hulp op afstand</a>
-                <a href="#">Inloggen</a>
+    <div class="header-top">
+        <div class="u-gridContainer">
+            <div class="u-gridRow">
+                    <div class="u-gridCol6 telefoonheader">
+                        <a href="tel:0172210145"><span>Tel: 0172 - 210 145</span></a>
+                        <a href="mailto:info@kampen-ak.nl"><span>Mail: info@kampen-ak.nl</span></a>
+                    </div>
+                    <div class="u-gridCol6 headerrechts">
+                        <a href="http://vankampen.lokaalgevonden.nl/aanmelden-nieuwsbrief/">Aanmelden Nieuwsbrief</a>
+                        <a href="#">Hulp op afstand</a>
+                        <a href="#">Inloggen</a>
+                    </div>
             </div>
-         </div>
+        </div>
     </div>
-</div>
 <div class="menu-wrapper">
 
 <!--navigatie-->
 <div></div>
   <div class="Bot-Nav">
 	<div class="u-gridContainer">
-        <div class="u-gridCol3">
-            <div class="logo">
-                <a href="http://vankampen.lijktmeduidelijk.nl/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
-            </div>
-        </div> 
-        <div class="u-gridCol9">
-            <div class="navi-wrapper">
-        		<div class="Nav-toggle u-cf">
+        <div class="u-gridRow">
+            <div class="u-gridCol12 navi-wrapper">
+                <div>
+                    <a href="http://vankampen.lijktmeduidelijk.nl/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo"></a>
+                </div>     
+        		<div class="Nav-toggle u-cf">  
         			<a class="Navigation-menuToggle" id="js-navCollapse">
         				<svg class="Icon Icon--inline" viewBox="0 0 128 128">
         					<use xlink:href="#icon-menu2"></use>
         				</svg>
         			</a>
-        		</div>
-            </div>
 
-        		<?php include 'includes/navigation.php'; ?>
+                <?php include 'includes/navigation.php'; ?>
 
+
+        </div>
+        <div class="u-gridRow">        
         		<div class="Mob-contact-ico">
-        			<a class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:0172210145">
+        			<a id="mobieltel" class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:0172210145">
         				<svg class="Icon Icon--inline" viewBox="0 0 128 128">
         					<use xlink:href="#icon-phone"></use>
         				</svg>
         			</a>
         		
-                        <a class="Button Button--transparent u-textInverted u-noLine mailsvg" href="mailto:info@kampen-ak.nl">
+                        <a id="mobielmail" class="Button Button--transparent u-textInverted u-noLine mailsvg" href="mailto:info@kampen-ak.nl">
         				<svg class="Icon Icon--inline" viewBox="0 0 128 128">
         					<use xlink:href="#icon-envelope"></use>
         				</svg>
         			</a>
         		</div><!-- header-contact -->
-
-    	</div>
+        </div>
     </div>
   </div>
-
-
 </div>

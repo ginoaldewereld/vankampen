@@ -1,7 +1,9 @@
 .Footer {
 	background-color: #441111;
 	width: 100%;
-	height: 180px;
+	height: 215px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 // RESPONSIVE FOOTER
@@ -10,6 +12,19 @@
 	@media screen and(max-width: 980px){
 		@include span-columns(12);
 	}
+}
+
+.Socket {
+	margin-right: 16%;
+	margin-bottom: 20px;
+	float: right;
+		a {
+			color: #025492;
+		}
+}
+
+#kleurgeel {
+	color: #f48022;
 }
 
 .Footer-inner {
@@ -64,12 +79,21 @@
 	}
 }
 .contactPictogram {
-	margin-top: 5px;
+	margin-top: 1px;
 	margin-right: 5px;
 }
 .googleplay {
-	margin-left: 130px;
-	margin-top: -40px;
+	margin-left: 245px;
+	margin-top: -42px;
+}
+
+.footerklein {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+		a {
+			color: white;
+		}
 }
 
 .footersitemap {
@@ -77,5 +101,17 @@
 		font-size: 14px;
 		color: white;
 		font-weight: bold;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.footergroot {
+		display: none;
+	}
+}
+
+@media all and (min-width: 700px) {
+	.footerklein {
+		display: none;
 	}
 }

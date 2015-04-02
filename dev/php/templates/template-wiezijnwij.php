@@ -9,6 +9,9 @@ Template Name: Wie zijn wij
 	<div class="u-gridContainer">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--fullwidth" id="post-<?php the_ID(); ?>">
+	</div>
+	<div class="backgroundcoverhead"></div>
+	<div class="u-gridContainer">
 			<h2>Mogen wij ons even voorstellen?</h2>
 			<div>
 				<?php the_content(); ?>

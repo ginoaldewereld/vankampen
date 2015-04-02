@@ -1,11 +1,25 @@
 .Content {
+	margin-top: 30px;
 	p {
 		color: #441111;
 	}
 }
+	#post-3 {
+		h2{
+			display: none;	
+		}
+}
+	
 
 .contentBackground {
 	background-image: url("../img/headerfoto.jpg");
+}
+
+.backgroundcoverhead {
+	background-image: url("../img/headerfoto.jpg");
+	height:	35px;
+	margin-top: -30px;
+	margin-bottom: 20px;
 }
 
 .whiteBackground {
@@ -20,7 +34,6 @@
 		color: white;
 		text-align: center;
 		font-size: 28px;
-		font-family: Myriad Pro Regular;
 		font-weight: normal;
 		margin-top: 33px;
 		margin-bottom: 33px;
@@ -38,20 +51,18 @@
 
 .columnBeads{
 	margin-top: 250px;
+	text-align: center
 }
 
 .columnBeadsAdministratie {
-	padding-left: 100px;
-	height: 266px;
+	margin-top: 25px;
 
 }
 .columnBeadsBelasting {
-	padding-left: 100px;
-	height: 266px;
+	margin-top: 25px;
 }
 .columnBeadsAdvies {
-	padding-left: 100px;
-	height: 266px;
+	margin-top: 25px;
 }
 
 //////// Wie zijn wij ///////
@@ -67,10 +78,17 @@
 .links-list {
 	ul {
 		text-align: right;
+		border: 3px solid #441111;
+
+		padding-top: 25px;
+		padding-bottom: 90px;
+		margin-top: 1px;
 	}
 	li{
 		color: #441111;
 		border: 3px;
+
+		padding-right: 15px;
 
 	}
 }
@@ -78,7 +96,7 @@
 .links-foto {
 	margin-bottom: 20px;
 	img {
-		border: 3px solid white;
+		border: 3px solid #441111;
 	}
 }
 
@@ -234,9 +252,9 @@ a {
 
 .keynote:hover .keynote-name {
   &::after {
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     content: "";
-    bottom: -13px; left: 50%;
+    bottom: 7px; left: 50%;
     margin-left: -100px;
     position: absolute;
     width: 200px;
@@ -304,4 +322,136 @@ a {
 	h1{
 		font-size: 25px;
 	}
+}
+
+/////// Nieuwsbrieven
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.dropdown {
+  margin: 0px auto;
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 400px;
+}
+
+.dropdown label {
+  display: block;
+  padding: 8px 16px;
+  background: #441111;
+  color: #FAFAFA;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.dropdown ul {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+}
+
+.dropdown ul li {
+  padding: 0px 16px;
+  background: #DDD;
+  color: #343838;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  height: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.1s linear 0s;
+}
+
+.dropdown ul li:hover,
+.dropdown ul li.selected {
+  background: #00B4CC;
+  color: #FAFAFA;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover ul li {
+  padding: 8px 16px;
+  height: 34px;
+}
+
+////// Nieuws ///////
+
+.nieuwsbrieven{
+	h1 {
+		padding-left: 150px;
+	}
+	h2 {
+		padding-left: 100px;
+		padding-bottom: 15px;
+	}
+	p {
+		padding-left: 25px;
+		padding-bottom: 25px;
+	}
+	li {
+		padding-left: 125px;
+	}
+	ul {
+		margin-top: -20px;
+		margin-bottom: 25px;
+	}
+	a {
+		color: #441111;
+		font-weight: bold;
+	}
+}
+
+
+@media all and (max-width: 1137px) {
+	.logogroot {
+		display: none;
+	}
+}
+@media all and (max-width: 800px) {  
+  .columnBeads{
+    display: none;
+  }
+  .whiteBackground {
+  	display: none;
+  }
+  .contentBackground {
+  	height: 431px;
+  }
+  .footer {
+  	margin-top: 140px;
+  }
+  .bx-wrapper {
+  	display: none;
+  }
+  .contentBackground{
+  	height: 150px;
+  	margin-bottom: 350px;
+  }
+  	#post-3 {
+  		margin-top: 45px;
+  	}
+  }
+
+@media all and (max-width: 400px) {
+	.contentBackground{
+  		margin-bottom: 450px;
+  		height: 175px;
+  }
+  #post-3 {
+  		margin-top: 0px;
+  	}
+}
+
+@media all and (max-width: 275px) {
+	.contentBackground{
+  		margin-bottom: 550px;
+  		height: 175px;
+  }
 }

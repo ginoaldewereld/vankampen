@@ -19,9 +19,20 @@
 }
 .slider-box {
 	position: absolute;
-	background-color: grey;
-	opacity: 0.5;
-	width: 25%;
+	background-color: white;
+	opacity: 0.8;
+	height: 90px;
+	width: 615px;
+	margin-top: 25px;
+	border-radius: 70px;
+	margin-left: -60px;
+		h1 {
+			float: left;
+			margin-left: 80px;
+			color: #441111;
+			opacity: 1;
+
+		}
 }
 /** THEME ===================================*/
 

@@ -5,10 +5,12 @@ Template Name: Links
 ?>
 
 <?php get_header(); ?>
-
 	<div class="u-gridContainer">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--fullwidth" id="post-<?php the_ID(); ?>">
+	</div>
+	<div class="backgroundcoverhead"></div>
+	<div class="u-gridContainer">
 			<h2><?php the_title(); ?></h2>
 			<div>
 				<?php the_content(); ?>
@@ -33,5 +35,4 @@ Template Name: Links
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/linksfoto.jpg">
 		</div>
 	</div>
-
 <?php get_footer(); ?>

@@ -5,8 +5,6 @@ Template Name: Contactpage
 ?>
 
 <?php get_header(); ?>
-
-	<div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>">
 			<div class="Content-entry">
@@ -41,10 +39,8 @@ Template Name: Contactpage
 					</div>
 
 				</div> <!-- content-text -->
-			</div>
 		</article>
+		</div>
 	<?php endwhile; endif; ?>
-	</div>
-
 <?php get_footer(); ?>
 

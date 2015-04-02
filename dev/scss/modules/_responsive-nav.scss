@@ -1,24 +1,22 @@
 // Responsive nav menu. Everything related to the navigation in TABLET/MOBILE mode should go here
 
 @media all and (min-width: 1040px) {
+}
 
-} 
 
 .Navigation-menuToggle {
   display: none;
 }
 .Navigation-menuToggle {
-//background-color: white;
-  width: 36px;
-  height: 36px;
+  background-color: #570f0f;
+  width: 40px;
+  height: 40px;
   border-radius: 7px;
   margin-top: 7px;	
-  background-color: transparent;
   border: 3px solid white;
   cursor: pointer;
   float: right;    
 	&:hover {
-		//	background-color: #fafafa;
 	}
 }
 
@@ -58,11 +56,12 @@
 	 #js-navCollapseTarget {
 		display: none;
         position: relative;
-        top: 65px;
+        top: 5px;
         left: 0;
         margin: 0;
         width: 100%;
-        box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.3) inset;
+        z-index: 100;
+        background-color: #570f0f;
 	 }
 
 	 .Bot-Nav {
@@ -155,7 +154,7 @@
 		z-index: 5000;
 
 		a { 
-			border: 2px solid white;
+			border: 2px solid;
 			position: absolute;
 			display: block;
 			width: 35px;
@@ -164,22 +163,21 @@
 			top: 8px;
 			background-color: transparent;
 			&:hover {
-				background-color: rgba(255,255,255,0.2);
+				background-color: #fff;
 			}
 
 			.Icon--inline {
 				fill: white;
-				width: 2em;
-				height: 2em;
-				padding-bottom: 1em;				
+				width: 2.1em;
+				height: 2.1em;				
 			}
 		}
 
 		.telsvg {
-			left: 10px;				
+			margin-left: 200px;				
 			.Icon--inline {
 				margin: -4px;
-				margin-top: 5px;
+				margin-top: -15px;
 			}
 		}
 
@@ -192,15 +190,32 @@
 		}
 
 		.mailsvg {
-			left: 100px;				
+			margin-left: 150px;			
 			.Icon--inline {
 				margin: -4px;
-				margin-top: 5px;
+				margin-top: -15px;
 			}
 		}
 	}
 }
+.Mob-contact-ico a .Icon--inline {
+	fill: #441111;
+}
+///// Logo /////
+@media all and (max-width: 1135px) { 
+  .logo {
+  	position: fixed;
 
+  	img {
+  		max-width: 90%;
+  		}
+  }
+  
+  .logo-bot {
+    margin-top: 20px;
+    width: 170px;
+  }
+}
 @media all and (min-width: 1040px) {  
   #js-navCollapse {
     display: none;
@@ -218,15 +233,13 @@
     width: 210px;
   }
 }
-
-@media all and (max-width: 390px) { 
-  .logo-top {
-    width: 180px;
-    margin-top: 48px;
-  }
-  
-  .logo-bot {
-    margin-top: 20px;
-    width: 170px;
-  }
+@media all and (max-width: 600px) {
+	.Navigation{
+	margin-left: 40%;
+	}
+}
+@media all and (max-width: 350px) {
+	.Navigation{
+	margin-left: 20%;
+	}
 }

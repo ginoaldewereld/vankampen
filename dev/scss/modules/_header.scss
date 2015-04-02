@@ -19,24 +19,22 @@
     padding-left: 10px;
     margin-top: 10px;
     color: white;
-     }
-}
-
-.headerLinks {
-  float: right;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
+    font-weight: bold;
+    float: right;
+    }
 }
 .menu-wrapper {
  background:white; 
  height:80px;
  position: relative;
+ 
 }
 
 
 .logo {
-  margin-top: -35px;
+  height: 110px !important;
+  position: absolute !important;
+  margin: -14px;
 }
 // -------------------------------------
 // Module specific variables
@@ -103,4 +101,16 @@
 
 .Slider {
 	visibility: hidden;
+}
+
+@media all and (max-width: 1040px) {
+  .logo {
+  margin: -21px;
+  }
+  .telefoonheader {
+    display: none;
+  }
+  .headerrechts {
+    float: left;
+  }
 }
