@@ -1,5 +1,6 @@
 .Footer {
-	background-color: #441111;
+  	background-color: #981c30;
+  	background-image: url("../img/backgroundline.png");
 	width: 100%;
 	height: 215px;
 	margin-top: 35px;
@@ -16,7 +17,7 @@
 
 .Socket {
 	margin-right: 16%;
-	margin-bottom: 20px;
+	font-weight: bold;
 	float: right;
 		a {
 			color: #025492;
@@ -89,6 +90,7 @@
 
 .footerklein {
 	color: white;
+	padding-top: 10px;
 	font-weight: bold;
 	text-align: center;
 		a {

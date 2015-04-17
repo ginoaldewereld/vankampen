@@ -12,15 +12,15 @@ Template Name: Medewerkers
 	</div>
 	<div class="backgroundcoverhead"></div>
 	<div class="u-gridContainer">
-			<h2>Personeel</h2>
+			<h1>Personeel</h1>
 			<div>
 				<?php the_content(); ?>
 				<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 			</div>
 		</article>
 	<?php endwhile; endif; ?>
-		<div class="u-gridCol12">
-			<h1>Directrice en uw adviseuze</h1>
+		<div class="u-gridCol12 jaarstukken">
+			<h2>Directrice en uw adviseuze</h2>
 			<hr>
 		</div>
 		<div class="u-gridCol5">
@@ -35,7 +35,7 @@ Template Name: Medewerkers
 			</div>
 		</div>
 		<div class="u-gridCol11 jaarstukken">
-			<h1>Administratie en aangifte omzetbelasting</h1>
+			<h2>Administratie en aangifte omzetbelasting</h2>
 			<hr>
 		</div>
 		<div class="u-gridCol6">
@@ -59,7 +59,7 @@ Template Name: Medewerkers
 			</div>
 		</div>
 		<div class="u-gridCol11 jaarstukken">
-			<h1>De jaarstukken, inkomstenbelasting en vennootschapbelasting</h1>
+			<h2>De jaarstukken, inkomstenbelasting en vennootschapbelasting</h2>
 			<hr>
 		</div>
 		<div class="u-gridCol6">
@@ -83,11 +83,11 @@ Template Name: Medewerkers
 			</div>
 		</div>
 		<div class="u-gridCol6 jaarstukken">
-			<h1>De salarisadministratie</h1>
+			<h2>De salarisadministratie</h2>
 			<hr>
 		</div>
 		<div class="u-gridCol5 jaarstukken">
-			<h1>Webmaster en PR-medewerker</h1>
+			<h2>Webmaster en PR-medewerker</h2>
 			<hr>
 		</div>
 		<div class="u-gridCol6">

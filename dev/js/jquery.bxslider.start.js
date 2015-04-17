@@ -1,15 +1,15 @@
 jQuery(document).ready(function($) {
   $('.Slider').bxSlider({
-    mode: 'horizontal',
+    mode: 'fade',
     minSlides: 1,
     maxSlides: 1,
     startSlide: 1,
     //slideWidth: 1200,
     slideMargin: 0,
     // captions: true,
-    pause: 4000,
+    pause: 9000,
     auto: true,
-    speed: 500,
+    speed: 2000,
     infiniteLoop: true,
     hideControlOnEnd: true,
     touchEnabled: false,

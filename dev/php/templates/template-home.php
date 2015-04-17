@@ -9,7 +9,7 @@ Template Name: Homepage
 	<div class="u-gridContainer">
 		<div class="u-gridRow">
 			<div class="welcomeTekst">
-				<h2>Welkom bij Van Kampen Administratie en Kantoorservice</h2>
+				<h2>Welkom bij van Kampen Administraties en Kantoorservice</h2>
 			</div>
 			<div class="Slider">
 	        <?php
@@ -59,13 +59,13 @@ Template Name: Homepage
 			<div class="u-gridRow">
 				<div class="columnBeads">
 					<div class="u-gridCol4 columnBeadsAdministratie">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/administratieicon.png">
+						<a href="http://vankampen.lokaalgevonden.nl/ondernemers/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/administratieicon.png"></a>
 					</div>
 					<div class="u-gridCol4 columnBeadsBelasting">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/belastingicon.png">
+						<a href="http://vankampen.lokaalgevonden.nl/particulieren/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/belastingicon.png"></a>
 					</div>
 					<div class="u-gridCol4 columnBeadsAdvies">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/adviesicon.png">
+						<a href="http://vankampen.lokaalgevonden.nl/advies/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/adviesicon.png"></a>
 					</div>
 				</div>
 			</div>

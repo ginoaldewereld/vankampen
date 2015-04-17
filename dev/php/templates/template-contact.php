@@ -5,20 +5,21 @@ Template Name: Contactpage
 ?>
 
 <?php get_header(); ?>
+	<div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>">
 			<div class="Content-entry">
 				<h2><?php the_title(); ?></h2>
-				<div class="Content-text">
+				<div class="Content-text content">
 
 					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p>vankampen</p>
+								<p>Van Kampen</p>
 								<p>Pastoor Daalmansplantsoen 43</p>
 								<p>2771 SH Boskoop</p>
-								<p>Email: info@kampen-ak.nl</p>
-								<p>Tel: 0172210145</p>
+								<a href="mailto:info@kampen-ak.nl"><p>Email: info@kampen-ak.nl</p></a>
+								<a href="tel:0172210145"><p>Tel: 0172210145</p></a>
 							</div>
 	
 						</div>					
@@ -42,5 +43,6 @@ Template Name: Contactpage
 		</article>
 		</div>
 	<?php endwhile; endif; ?>
-<?php get_footer(); ?>
+	</div>
 
+<?php get_footer(); ?>
