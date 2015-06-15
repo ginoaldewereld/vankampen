@@ -59,13 +59,13 @@ Template Name: Homepage
 			<div class="u-gridRow">
 				<div class="columnBeads">
 					<div class="u-gridCol4 columnBeadsAdministratie">
-						<a href="http://vankampen.lokaalgevonden.nl/ondernemers/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/administratieicon.png"></a>
+						<a href="http://vankampen.lokaalgevonden.nl/administratie/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homebuttonadministratie.png"></a>
 					</div>
 					<div class="u-gridCol4 columnBeadsBelasting">
-						<a href="http://vankampen.lokaalgevonden.nl/particulieren/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/belastingicon.png"></a>
+						<a href="http://vankampen.lokaalgevonden.nl/belasting/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homebuttonbelastingen.png"></a>
 					</div>
 					<div class="u-gridCol4 columnBeadsAdvies">
-						<a href="http://vankampen.lokaalgevonden.nl/advies/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/adviesicon.png"></a>
+						<a href="http://vankampen.lokaalgevonden.nl/advies/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homebuttonadvies.png"></a>
 					</div>
 				</div>
 			</div>

@@ -14,7 +14,7 @@ Template Name: App page
 			<div class="u-gridContainer">
 				<h2><?php the_title(); ?></h2>
 				<aside class="u-gridCol4">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/screenshot.png" class="App-iphone" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/screenshot3.png" class="App-iphone" />
 				</aside>
 				<article class="Content-article u-gridCol8" id="post-<?php the_ID(); ?>">
 					<?php // the_content(); ?>

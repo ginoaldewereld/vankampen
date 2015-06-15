@@ -50,8 +50,8 @@
                     </div>
                     <div class="u-gridCol6 headerrechts">
                         <a href="http://vankampen.lokaalgevonden.nl/aanmelden-nieuwsbrief/">Aanmelden Nieuwsbrief</a>
-                        <a href="#">Hulp op afstand</a>
-                        <a href="#">Inloggen</a>
+                        <a href="https://www.teamviewer.com/nl/index.aspx" target="_blank">Hulp op afstand</a>
+                        <a href="https://start.exactonline.nl/docs/Login.aspx" target="_blank">Inloggen</a>
                     </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
             <div class="u-gridCol12 navi-wrapper">
                 <div>
                     <a href="http://vankampen.lijktmeduidelijk.nl/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo"></a>
-                </div>     
+                </div>
         		<div class="Nav-toggle u-cf">  
         			<a class="Navigation-menuToggle" id="js-navCollapse">
         				<svg class="Icon Icon--inline" viewBox="0 0 128 128">

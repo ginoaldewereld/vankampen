@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     // captions: true,
     pause: 9000,
     auto: true,
-    speed: 2000,
+    speed: 5000,
     infiniteLoop: true,
     hideControlOnEnd: true,
     touchEnabled: false,

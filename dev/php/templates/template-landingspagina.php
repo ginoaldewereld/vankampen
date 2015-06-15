@@ -40,29 +40,24 @@ Template Name: landingspagina
 	        ?>
 	    	</div>
 		</div>
-			<div class="u-gridRow">
-				<div>
-					<p>Bij ons kunt u terecht voor al uw verschillende administraties. Van bedrijfsadministraties tot privé-administraties, van belastingaangiften tot jaarwerk en uiteraard kunnen wij u ook voorzien van uitstekend advies op het gebied van belasting- en administratiezaken. Via de contactpagina kunt u zien hoe u ons kunt bereiken. Neem gerust contact op voor een vrijblijvende afspraak. Wij hopen u spoedig te kunnen verwelkomen in ons kantoor.</p>
-				</div>
-			</div>
 	</div>
 	<div class="whiteBackground">
 		<div class="u-gridContainer">
 			<div class="u-gridRow">
-				<div class="columnBeads">
-					<div class="u-gridCol4 columnBeadsAdministratie">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/administratieicon.png">
+				<div class="u-gridCol3 landingspaginacolumns">
+					<div class="adminicon">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homebuttonadministratie.png">
 					</div>
-					<div class="u-gridCol4 columnBeadsBelasting">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/belastingicon.png">
-					</div>
-					<div class="u-gridCol4 columnBeadsAdvies">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/adviesicon.png">
-					</div>
+					<br>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homebuttonbelastingen.png">
+					<br>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homebuttonadvies.png">
 				</div>
-								<div>
+
+				<div class="u-gridCol9 landingspaginacontent">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article class="Content Content--home" id="post-<?php the_ID(); ?>">
+						<h2><?php the_title(); ?></h2>
 						<div>
 							<?php the_content(); ?>
 							<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
@@ -74,4 +69,5 @@ Template Name: landingspagina
 		</div>
 	</div>
 </div>
+
 <?php get_footer(); ?>

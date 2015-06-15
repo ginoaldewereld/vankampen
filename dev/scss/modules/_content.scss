@@ -9,24 +9,26 @@
 			display: none;	
 		}
 }
-	
+
+p.thick {
+  font-weight: bold;
+}
 
 .contentBackground {
-  background-color: #9c1d3b;
+  background-color: #cc0a2f;
   background-image: url("../img/backgroundline.png");
 }
 
 .backgroundcoverhead { 
-  background-color: #9c1d3b;
+  background-color: #cc0a2f;
 	height:	35px;
 	margin-top: -30px;
 	margin-bottom: 20px;
 }
- 
+
 .whiteBackground {
-	background: #ffffff;
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5462/cream_pixels.png) repeat;
 	width: 100%;
-	height: 570px;
 	margin-top: -250px;
 	margin-bottom: -34px;
 }
@@ -66,6 +68,11 @@
 .columnBeadsAdvies {
 	margin-top: 25px;
 }
+/////// Landingspagina //////
+
+.landingslist {
+  padding-left: 25px;
+}
 
 //////// Wie zijn wij ///////
 
@@ -74,23 +81,23 @@
 		margin-top: 15px;
 		margin-bottom: 15px;
 		margin-right: 15px;
-		border: 3px solid #441111;
+		border: 3px solid #cc0a2f;
+    max-height: 342px;
 	}
 }
-
 //////// Links ////////
 .links-list {
 	padding-bottom: 15px;
 	ul {
 		text-align: right;
-		border: 3px solid #441111;
+		border: 3px solid #cc0a2f;
 
 		padding-top: 25px;
 		padding-bottom: 30px;
 		margin-top: 1px;
 	}
 	li{
-		color: #441111;
+		color: #000000;
 		border: 3px;
 
 		padding-right: 15px;
@@ -101,11 +108,16 @@
 .links-foto {
 	margin-bottom: 20px;
 	img {
-		border: 3px solid #441111;
+		border: 3px solid #cc0a2f;
 	}
 }
 
 //////// Medewerkers ////////
+.padding {
+  padding-top: 120px;
+}
+
+
 @mixin bp($point) {
   @if () {
     $bp-chicago: "(min-width: 600px)";
@@ -140,7 +152,7 @@
 
 // variables
 
-$red: #441111;
+$red: #cc0a2f;
 
 * {
   box-sizing: border-box;
@@ -158,7 +170,7 @@ body {
 }
 
 a {
-  color: #441111;
+  color: #000528;
 }
 
 .container {
@@ -257,6 +269,7 @@ a {
 
 .keynote:hover .keynote-name {
   &::after {
+    display: none;
     border: 1px solid #ccc;
     content: "";
     bottom: 7px; left: 50%;
@@ -331,12 +344,6 @@ a {
 
 /////// Nieuwsbrieven
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 .wrapper {
   display: flex;
 }
@@ -351,7 +358,7 @@ a {
 .dropdown label {
   display: block;
   padding: 8px 16px;
-  background: #441111;
+  background: #cc0a2f;
   color: #FAFAFA;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -412,10 +419,43 @@ a {
 		font-weight: bold;
 	}
 }
+.rss {
+  h2 {
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+  }
+  hr {
+    margin-bottom: 15px;
+  }
+  a{
+    color: #b20627;
+  }
+  padding-left: 25px;
+}
+
+.rssfeed {
+    font-weight: bold;
+}
+
+.accordionsnieuws {
+  padding-bottom: 100px;
+}
+
+/// Landingspagina ///
+
+.adminicon {
+  margin-top: 250px;
+}
+
+.landingspaginacontent {
+  margin-top: 260px;
+}
+
 
 
 @media all and (max-width: 1137px) {
-	.logogroot {
+	 groot {
 		display: none;
 	}
 }
@@ -426,9 +466,6 @@ a {
   .whiteBackground {
   	display: none;
   }
-  .contentBackground {
-  	height: 431px;
-  }
   .footer {
   	margin-top: 140px;
   }
@@ -437,29 +474,58 @@ a {
   }
   .contentBackground{
   	height: 150px;
-  	margin-bottom: 350px;
+  	margin-bottom: 150px;
   }
   	#post-3 {
   		margin-top: 45px;
   	}
+  .padding {
+    display: none;
   }
+}
+
+@media all and (max-width: 740px) {
+  .contentBackground{
+      margin-bottom: 250px;
+  }
+  #post-3 {
+    padding-top: 10px;
+  }
+  .logo {
+    padding: 25px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .wrapper{
+    margin-bottom: 210px;
+  }
+  .wrapper-drie {
+    margin-bottom: 10px;
+  }
+  .keynote{
+    width: 100%;
+  }
+  #nieuwstitel{
+    padding-top: 30px;
+  }
+}
 
 @media all and (max-width: 400px) {
 	.contentBackground{
-  		margin-bottom: 450px;
-  		height: 175px;
+  		height: 175px; 
   }
   #post-3 {
   		margin-top: 0px;
   	}
-}
-
-@media all and (max-width: 275px) {
-	.contentBackground{
-  		margin-bottom: 550px;
-  		height: 175px;
+  #nieuwstitel {
+  padding-left: 40px;
+  }
+  .welcomeTekst h2{
+    margin-top: 25px;
   }
 }
+
 .accordion {
   padding: 0;
   margin: 2em 0;

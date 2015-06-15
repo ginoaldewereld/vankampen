@@ -20,19 +20,19 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contactpictogram5.png">
 					</div>
 					<div class="u-gridCol3"> 
-					<a href="tel:0172210145"><p>0172 - 210 145</p></a> <br>
-					<a href="tel:0172210229"><p>0172 - 210 229</p></a> <br>
-					<a href="mailto:info@kampen-ak.nl"><p>info@kampen-ak.nl</p></a> <br>
+						<a href="tel:0172210145"><p>0172 - 210 145</p></a>
+						<a href="tel:0172210229"><p>0172 - 210 229</p></a>
+						<a href="mailto:info@kampen-ak.nl"><p>info@kampen-ak.nl</p></a>
 					</div>
 					<div class="u-gridCol3">
-					<p>Btw nr: <nbsp> 0212 42549 B01</p>
-					<p>Kvk nr: <nbsp> 290 33260</p>
+						<p>Btw nr: <nbsp> 0212.42.549.B01.</p>
+						<p>Kvk nr: <nbsp> 290 33260</p>
 					</div >
 					<div class="noablogo">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/noablogo2.png">
 					</div>
 					<div class="u-gridCol2 googleplay">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplay.png">
+						<a href="https://play.google.com/store/apps/details?id=com.wVanKampenAdministratieenKantoorservice" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplay.png"></a>
 					</div>
 				</div>
 				<div class="u-gridCol2 footersitemap">

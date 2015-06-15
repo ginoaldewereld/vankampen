@@ -19,9 +19,14 @@ Template Name: Wie zijn wij
 			</div>
 		</article>
 	<?php endwhile; endif; ?>
-		<div class="u-gridCol12 buitenfotos">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/kantoorbuiten.png">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/kantoorbuiten1.png">
+		<div class="u-gridRow">
+			<div class="u-gridCol6 buitenfotos">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/medewerkerpetra.png"> 
+				
+			</div>
+			<div class="u-gridCol6 buitenfotos">
+				<img id="maxheight" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kantoorbuiten.png">
+			</div>
 		</div>
 	</div>
 

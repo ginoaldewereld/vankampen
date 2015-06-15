@@ -8,7 +8,7 @@
   display: none;
 }
 .Navigation-menuToggle {
-  background-color: #981c30;
+  background-color: #cc0a2f;
   background-image: url("../img/backgroundline.png");
   width: 40px;
   height: 40px;
@@ -50,7 +50,7 @@
 //======================================================
 
 
-@media all and (max-width: 1040px) {
+@media all and (max-width: 800px) {
 	.Nav-tel {
 		display: none;
 	 }
@@ -62,7 +62,7 @@
         margin: 0;
         width: 100%;
         z-index: 100;
-        background-color: #981c30;
+        background-color: #cc0a2f;
   		background-image: url("../img/backgroundline.png");;
 	 }
 
@@ -90,7 +90,7 @@
 
 	.Navigation-list {
 		position: static;
-        background-color: #981c30;
+        background-color: #cc0a2f;
   		background-image: url("../img/backgroundline.png");
         border: 0px solid;
         box-shadow: 0 0 0 #fff;
@@ -144,7 +144,7 @@
 		font-weight: 400;
 		letter-spacing: 1.7px;
 	    &:hover {
-            background-color: #9c1d3b;
+            background-color: #cc0a2f;
             color: white;
         }
 
@@ -164,6 +164,7 @@
 			border-radius: 7px;
 			top: 8px;
 			background-color: transparent;
+			color: #CC0A2F;
 			&:hover {
 				background-color: #fff;
 			}
@@ -201,7 +202,7 @@
 	}
 }
 .Mob-contact-ico a .Icon--inline {
-	fill: #441111;
+	fill: #CC0A2F;
 }
 ///// Logo /////
 @media all and (max-width: 1135px) { 
@@ -223,6 +224,14 @@
     display: none;
   }
 }
+
+
+@media all and (max-width: 300px) {  
+  .logo {
+    display: none;
+  }
+}
+
 
 @media all and (max-width: 500px) { 
   .logo-top {

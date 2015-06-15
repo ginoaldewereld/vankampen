@@ -8,15 +8,14 @@
 ul.Navigation-list--dropdown {
     display: block;
     height: auto;
-    position: absolute;
     line-height: 45px;
     z-index: 9999;
     margin-top: 15px;
-    background-color: #9c1d3b;
-    right: -112px;
-    padding-left: 8px;
-    padding-right: 70px;
-    padding-top: 5px;
+    margin-left:20px;
+    background-color: #cc0a2f;
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul.Navigation-list--dropdown li.Navigation-listItem {
@@ -24,6 +23,7 @@ ul.Navigation-list--dropdown li.Navigation-listItem {
     padding: 0px 2px;
     margin: 0px auto;
     border: 0px none;
+
 }
 
 .Navigation-list.is-hidden {

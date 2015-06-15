@@ -6,7 +6,7 @@
 // *************************************
 
 .Navigation {
-  background-color: #981c30;
+  background-color: #cc0a2f;
   background-image: url("../img/backgroundline.png");
   padding-top: 15px;
   padding-bottom: 15px;
@@ -94,5 +94,11 @@
   .Navigation-menuToggle{
     margin-bottom: 10px;
     margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .Navigation {
+    width: 100%;
   }
 }
